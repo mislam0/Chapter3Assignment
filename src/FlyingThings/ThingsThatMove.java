@@ -1,15 +1,12 @@
 package FlyingThings;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class ThingsThatMove {
     public static void main(String[] args) {
-        List<Movement> movingObjects = new ArrayList<>();
+        Movement[] movingObjects = new Movement[3];
 
-        movingObjects.add(new Airplane("Boeing 747", 2016));
-        movingObjects.add(new Bird("Eagle"));
-        movingObjects.add(new Bird("Hummingbird"));
+        movingObjects[0] = new Airplane("Boeing 747", 2016);
+        movingObjects[1] = new Bird("Eagle");
+        movingObjects[2] = new Bird("Hummingbird");
 
         for (Movement object : movingObjects) {
             System.out.println(object + ":");
